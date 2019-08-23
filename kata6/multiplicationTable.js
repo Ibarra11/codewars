@@ -5,7 +5,7 @@
     multiplication(2) => [[1,2], [2,4]]
 
 */
- 
+
 multiplicationTable = function(size){
     let table = [];
     let row = [];
@@ -17,7 +17,7 @@ multiplicationTable = function(size){
       table.push(row);
       rowLevel++;
       row = [];
-    }
+    }dewr3f5
     return table;
   }
   

@@ -3,7 +3,7 @@
 
 SELECT  ROW_NUMBER() OVER() AS "rank", *
 FROM(
-  SELECT     CASE WHEN clan = '' THEN '[no clan specified]' else clan END, SUM(points) AS "total_points", COUNT(id) AS "total_people"
+  SELECT CASE WHEN clan = '' THEN '[no clan specified]' else clan END, SUM(points) AS "total_points", COUNT(id) AS "total_people"
   FROM people
   GROUP BY 1
   ORDER BY 2 DESC
